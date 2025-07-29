@@ -7,7 +7,9 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["src/**"]
+		"includes": [
+			"src/**"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -15,18 +17,16 @@
 	},
 	"linter": {
 		"enabled": true,
-		"domains": {
-			"test": "all",
-			"solid": "all",
-			"project": "all"
-		},
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"style": {
+				"useImportType": "off"
+			}
 		}
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double",
+			"quoteStyle": "single",
 			"semicolons": "asNeeded"
 		}
 	},
